@@ -1,8 +1,9 @@
 <template>
-  <h1>Home component</h1>
-  <h2>Name : {{ getName("sunny sood") }}</h2>
-  <h2>Email : {{ email }}</h2>
-  <h2>All Data : {{ getData().email }}</h2>
+  <h1 v-on:mousemove="getConsole()">Home component</h1>
+  <button v-on:click="getData('button clicked')">Click me</button><br /><br />
+  <button v-on:dblclick="getData('button double clicked')">Click me</button>
+
+  <h2>{{count}}</h2>
 </template>
 
 <script>
@@ -10,6 +11,7 @@ export default {
     name: "HomeComp",
     data() {
         return {
+            count: 0,
             email: "sunny1may@gmail.com",
             /*getName: function (e) {
                 return e;
@@ -17,7 +19,7 @@ export default {
         } 
     },
     methods:{
-        getName(e){
+        /*getName(e){
             return e;
         },
         getData(){
@@ -25,6 +27,13 @@ export default {
                 name: "shilpa",
                 email: this.email
             }
+        },*/
+        getData(e){
+            alert(e);
+            this.count = this.count+1;
+        },
+        getConsole(){
+            console.log("function called");
         }
     }
 };
