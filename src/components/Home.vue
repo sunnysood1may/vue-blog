@@ -46,19 +46,25 @@
   </span>
   <span v-for="item in users" :key="item.name">
       User name is : {{item.name}} and Email is : {{item.email}},&nbsp;
+      <h2>Reuse Component</h2>
+      <UserC :data="item" :getData="getData" />
   </span>
 
   <h2>Pass Data to child Component</h2>
   <ChildC name="sunny sood" :details="users" :setData="getData" />
 
+  
+  
+
 </template>
 
 <script>
 import ChildC from './Child.vue';
+import UserC from './User.vue';
 export default {
   name: "HomeComp",
   components: {
-    ChildC
+    ChildC,UserC
   },
   data() {
     return {
