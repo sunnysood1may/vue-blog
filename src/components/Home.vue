@@ -53,9 +53,9 @@
   <h2>Pass Data to child Component</h2>
   <ChildC name="sunny sood" :details="users" :setData="getData" />
 
+  <h2>HTML binding</h2>
+  <div v-html="text + tag + tag2 + tag3"></div>
   
-  
-
 </template>
 
 <script>
@@ -95,6 +95,10 @@ export default {
       ipassword: null,
       count: 0,
       email: "sunny1may@gmail.com",
+      text:"sunny sood",
+      tag:"<h2>sunny sood</h2>",
+      tag2:"<h2>Peter</h2>",
+      tag3:"<h2>Burce</h2>",
       /*getName: function (e) {
                 return e;
             },*/
