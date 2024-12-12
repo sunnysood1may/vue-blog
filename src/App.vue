@@ -1,18 +1,24 @@
 <template>
-  <!--<img alt="Vue logo" src="./assets/logo.png">-->
+  <router-link to="/home">Home Page</router-link>&nbsp;
+  <router-link to="/login">Login Page</router-link>&nbsp;
+  <router-link to="/HelloWorld">HelloWorld</router-link>&nbsp;
+  <router-link to="/cssBinding">CSS binding</router-link>&nbsp;
+  <router-link to="/props">Props</router-link>&nbsp;
+  <router-link to="/ref">Ref</router-link>&nbsp;
   <HelloWorld msg="Welcome to Your VueJS3 App"/>
-  <HomeComp />
+  <!--<HomeComp />-->
+  <router-view />
 </template>
 
 <script>
 import HelloWorld from './components/HelloWorld.vue';
-import HomeComp from './components/Home.vue';
+//import HomeComp from './components/Home.vue';
 
 export default {
   name: 'App',
   components: {
     HelloWorld,
-    HomeComp
+    //HomeComp
   }
 }
 </script>
