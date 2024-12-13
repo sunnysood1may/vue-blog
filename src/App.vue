@@ -5,6 +5,12 @@
   <router-link to="/cssBinding">CSS binding</router-link>&nbsp;
   <router-link to="/props">Props</router-link>&nbsp;
   <router-link to="/ref">Ref</router-link>&nbsp;
+  <router-link to="/simpleForm">Simple Form</router-link>&nbsp;
+  <router-link to="/formModifier">Form Modifier</router-link>&nbsp;
+  <router-link to="/nonProp">Non-Props data</router-link>&nbsp;
+  <router-link to="/computedProperty">Computed Property</router-link>&nbsp;
+  <router-link to="/watchers">Watchers</router-link>&nbsp;
+
   <HelloWorld msg="Welcome to Your VueJS3 App"/>
   <!--<HomeComp />-->
   <router-view />
